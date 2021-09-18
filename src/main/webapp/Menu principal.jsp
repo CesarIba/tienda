@@ -21,6 +21,7 @@
 	<li><a href="#"><span class="icon-database"></span>Módulo Gestión de Productos</a></li>
 	<li><a href="#"><span class="icon-cart"></span>Módulo Gestión de Ventas</a></li>
 	<li><a href="#"><span class="icon-stats-dots"></span>Módulo Gestión de Consultas y Reportes</a></li>
+	<li><a href="index.jsp"><span class="icon-stats-dots"></span>Salir</a></li>
 	</ul>
 </nav>
 </div>
