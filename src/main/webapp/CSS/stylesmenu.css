@@ -64,18 +64,3 @@ main{
     justify-content: left;
 }
 
-fieldset{
-    background-color: rgba(5, 7, 12, 0.9);
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    display:flex;
-    justify-content: center;
-}
-
-fieldset legend {
-	 background-color: rgba(5, 7, 12, 0.9);
-	 color: white;
-	 
-}
-
