@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+import javax.swing.JOptionPane;
+
 import controller.conexion;
 
 public class productosDAO {
@@ -13,22 +15,14 @@ public class productosDAO {
 	PreparedStatement ps;
 	//ResultSet rs;
 	
-	public boolean insertar_usuario(clientesDTO client) {
-		int result;
+	public boolean insertar_Productos(String url) {
 		boolean res=false;
-		try {
-			ps=cnn.prepareStatement("INSERT INTO usuarios VALUES(?,?,?,?,?)");
-			ps.setLong(1,client.getCedula_cliente());
-			ps.setString(2,client.getDireccion_cliente());
-			ps.setString(3,client.getMail_cliente());
-			ps.setString(4,client.getNombre_cliente());
-			ps.setString(5,client.getTel_cliente());
-			result=ps.executeUpdate();
-			if(result>0)
-				res=true;
-		} catch (SQLException e) {
-			e.printStackTrace();
-			
+		try
+		{
+			ps=cnn.prepareStatement("load data infile '"+url+"' into table productos fields terminated by ';' lines terminated by '\r\n';");
+			res=ps.executeUpdate()>0;
+		}catch(Exception e){
+			JOptionPane.showMessageDialog(null, "Error al cargar archivo en DAO");
 		}
 		return res;
 	}
