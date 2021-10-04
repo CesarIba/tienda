@@ -7,7 +7,7 @@
 <meta charset="ISO-8859-1">
 <link rel="stylesheet"
 	href="https://i.icomoon.io/public/temp/ea266a1913/UntitledProject/style.css">
-<link rel="stylesheet" href="CSS/stylesGestion2.css" type="text/css" />
+<link rel="stylesheet" href="CSS/stylesGestion.css" type="text/css" />
 <title>PRODUCTOS</title>
 <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="js/consultar.js"></script>
