@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+
 import controller.conexion;
 
 public class usuariosDAO {
@@ -78,5 +80,18 @@ public class usuariosDAO {
 		
 	}
 	
-
+	public ArrayList<usuariosDTO> consultaGral(){
+		ArrayList<usuariosDTO> listUsuarios=new ArrayList<>(); 
+		try {
+			ps=cnn.prepareStatement("SELECT * FROM usuarios");
+			rs=ps.executeQuery();
+			while(rs.next()) {
+				usuario=new usuariosDTO(rs.getLong(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5));
+				listUsuarios.add(usuario);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return listUsuarios;
+	}
 }
