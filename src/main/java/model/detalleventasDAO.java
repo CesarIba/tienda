@@ -1,0 +1,41 @@
+package model;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import controller.conexion;
+
+public class detalleventasDAO {
+
+	conexion con = new conexion();
+	Connection cnn = con.conexiondb();
+	detalleventasDTO detventa = null;
+	PreparedStatement ps;
+	ResultSet rs;
+
+	public boolean insertar_detventa(detalleventasDTO detventa) {
+		int result;
+		boolean res = false;
+		try {
+			ps = cnn.prepareStatement("INSERT INTO det_ventas VALUES(?,?,?,?,?,?)");
+			ps.setLong(1, detventa.getCant_producto());
+			ps.setLong(2, detventa.getCod_producto());
+			ps.setLong(3, detventa.getCod_venta());
+			ps.setLong(4, detventa.getValor_total());
+			ps.setLong(5, detventa.getValor_venta());
+			ps.setLong(6, detventa.getValor_iva());
+
+			result = ps.executeUpdate();
+			if (result > 0)
+				res = true;
+		} catch (SQLException e) {
+			e.printStackTrace();
+
+		}
+		return res;
+	}
+
+}

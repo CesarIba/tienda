@@ -5,8 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<link rel="stylesheet"
-	href="https://i.icomoon.io/public/temp/ea266a1913/UntitledProject/style.css">
+<link rel="stylesheet" href="https://i.icomoon.io/public/temp/2b5b85b3e1/UntitledProject/style.css">
 <link rel="stylesheet" href="CSS/stylesGestion.css" type="text/css" />
 <title>PRODUCTOS</title>
 <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
@@ -14,7 +13,7 @@
 </head>
 <body>
 	<div class="cont_subtitulo">
-		<h2>Tienda genérica</h2>
+		<h2>TIENDA DEPORTIVA</h2>
 	</div>
 	<main>
 		<section class="section" id=s1>
@@ -25,27 +24,27 @@
 								Gestión de Usuarios</a></li>
 						<li><a href="GestionClientes.jsp"><span class="icon-address-book"></span>Módulo
 								Gestión de Clientes</a></li>
-						<li><a href="#"><span class="icon-truck"></span>Módulo
+						<li><a href="GestionProveedores.jsp"><span class="icon-truck"></span>Módulo
 								Gestión de Proveedores</a></li>
-						<li><a href="#"><span class="icon-database"></span>Módulo
+						<li><a href="GestionProductos.jsp"><span class="icon-database"></span>Módulo
 								Gestión de Productos</a></li>
-						<li><a href="#"><span class="icon-cart"></span>Módulo
+						<li><a href="Gestionventas.jsp"><span class="icon-cart"></span>Módulo
 								Gestión de Ventas</a></li>
-						<li><a href="#"><span class="icon-stats-dots"></span>Módulo
+						<li><a href="Reportes.jsp"><span class="icon-stats-dots"></span>Módulo
 								Gestión de Consultas y Reportes</a></li>
 						<li><a href="index.jsp"><span class="icon-exit"></span>Salir</a></li>
 					</ul>
 				</nav>
 			</div>
 		</section>
-		<section class="section2" id="s2">
+		<section class="section4" id="s4">
 			<fieldset>
 				<legend>Productos</legend>
-				<div class="gestion-usuarios">
+				<div class="gestion-productos">
 					<form action="servletProductos" method="post" enctype="multipart/form-data">
-						<input type="file" name="urlArchivo" value="">
-						<input type="text" name="nomArchivo" value="">
-						<input type="submit" name="btnCargar" value="Agregar Archivo"> 
+						<br><input type="file" name="urlArchivo" value=""><br>
+						<br><input type="text" name="nomArchivo" value="" placeholder="Nombre del archivo"><br><br>
+						<input type="submit" name="btnCargar" value="Agregar Archivo"><br> 
 					</form>
 				</div>
 			</fieldset>
