@@ -22,7 +22,7 @@ public class productosDAO {
 			ps=cnn.prepareStatement("load data infile '"+url+"' into table productos fields terminated by ';' lines terminated by '\r\n';");
 			res=ps.executeUpdate()>0;
 		}catch(Exception e){
-			JOptionPane.showMessageDialog(null, "Error al cargar archivo en DAO");
+			JOptionPane.showMessageDialog(null, e.getMessage());
 		}
 		return res;
 	}
