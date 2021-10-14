@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@page import="controller.conexion"%>
+<%@page import="model.clientesDTO"%>
+<%@page import="model.productosDTO"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,16 +13,6 @@
 <title>PROVEEDORES</title>
 </head>
 <body>
-	<%
-	String nit = "", nom = "", ciu = "", dir = "", tel = "";
-	if (request.getParameter("nit") != null) {
-		nit = request.getParameter("nit");
-		nom = request.getParameter("nom");
-		ciu = request.getParameter("ciu");
-		dir = request.getParameter("dir");
-		tel = request.getParameter("tel");
-	}
-	%>
 	<div class="cont_subtitulo">
 		<h2>TIENDA DEPORTIVA</h2>
 	</div>
@@ -51,10 +43,10 @@
 				<legend>Ventas</legend>
 				<div class="gestion-usuarios">
 					<form action="servletVentas" method="POST">
-						<input type="text" name="cedula" value="" placeholder="Cedula"><br>
+						<input type="text" name="cedCli" value="${cliente.getCedula_cliente()}" placeholder="Cedula"><br>
 						<input class="consultar" type="submit" name="btnConsultar" value="Consultar">
-						<input type="text" name="cliente" value="" placeholder="Cliente"><br>
-						<input type="text" name="consec" value="" placeholder="Consec"><br>
+						<input type="text" name="cliente" value="${cliente.getNombre_cliente()}" placeholder="Cliente"><br>
+<!-- 						<input type="text" name="consec" value="" placeholder="Consec"><br> -->
 					<table width="50%" border="1" align="center">
 					  <tr>
 					    <td>Codigo</td>
@@ -65,25 +57,25 @@
 					  </tr>
 					  
 					  <tr>
-					    <td><input type="text" name="cod_prod1" value="" placeholder=""><br> </td>
-					    <td><input class="consultar" type="submit" name="btnConsulprod" value="Consultar"></td>
-					    <td><input type="text" name="nombre_prod1" value="" placeholder=""><br> </td>
+					    <td><input type="text" name="cod_prod1" value="${producto1.getCod_producto()}" placeholder=""><br> </td>
+					    <td><input class="consultar" type="submit" name="btnConsulprod1" value="Consultar"></td>
+					    <td><input type="text" name="nombre_prod1" value="${producto1.getNombre_producto()}" placeholder=""><br> </td>
 					    <td><input type="text" name="cant_prod1" value="" placeholder=""><br> </td>
-					    <td><input type="text" name="valor_prod1" value="" placeholder=""><br> </td>
+					    <td><input type="text" name="valor_prod1" value="${producto1.getPrecio_venta()}" placeholder=""><br> </td>
 					  </tr>
 					  <tr>
-					    <td><input type="text" name="cod_prod2" value="" placeholder=""><br> </td>
-					    <td><input class="consultar" type="submit" name="btnConsulprod" value="Consultar"></td>
-					    <td><input type="text" name="nombre_prod2" value="" placeholder=""><br> </td>
+					    <td><input type="text" name="cod_prod2" value="${producto2.getCod_producto()}" placeholder=""><br> </td>
+					    <td><input class="consultar" type="submit" name="btnConsulprod2" value="Consultar"></td>
+					    <td><input type="text" name="nombre_prod2" value="${producto2.getNombre_producto()}" placeholder=""><br> </td>
 					    <td><input type="text" name="cant_prod2" value="" placeholder=""><br> </td>
-					    <td><input type="text" name="valor_prod2" value="" placeholder=""><br> </td>
+					    <td><input type="text" name="valor_prod2" value="${producto2.getPrecio_venta()}" placeholder=""><br> </td>
 					  </tr>
 					  <tr>
-					    <td><input type="text" name="cod_prod3" value="" placeholder=""><br> </td>
-					    <td><input class="consultar" type="submit" name="btnConsulprod" value="Consultar"></td>
-					    <td><input type="text" name="nombre_prod3" value="" placeholder=""><br> </td>
+					    <td><input type="text" name="cod_prod3" value="${producto3.getCod_producto()}" placeholder=""><br> </td>
+					    <td><input class="consultar" type="submit" name="btnConsulprod3" value="Consultar"></td>
+					    <td><input type="text" name="nombre_prod3" value="${producto3.getNombre_producto()}" placeholder=""><br> </td>
 					    <td><input type="text" name="cant_prod3" value="" placeholder=""><br> </td>
-					    <td><input type="text" name="valor_prod3" value="" placeholder=""><br> </td>
+					    <td><input type="text" name="valor_prod3" value="${producto3.getPrecio_venta()}" placeholder=""><br> </td>
 					  </tr>
 					  
 					  <tr>
@@ -111,6 +103,8 @@
 					
 						<input class="insertar" type="submit" name="btnInsertar" value="Insertar">
 						<input class="limpiar" type="reset" name="btnLimpiar" value="Limpiar"> 
+						<%--<input type="text" name="cedUsu" value="${vs}"  > --%>
+						<input type="text" hidden="false" name="cedUsu" value="123456789">
 					</form>
 				</div>
 			</fieldset>

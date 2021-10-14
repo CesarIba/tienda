@@ -21,12 +21,12 @@ public class detalleventasDAO {
 		boolean res = false;
 		try {
 			ps = cnn.prepareStatement("INSERT INTO det_ventas VALUES(?,?,?,?,?,?)");
-			ps.setLong(1, detventa.getCant_producto());
+			ps.setInt(1, detventa.getCant_producto());
 			ps.setLong(2, detventa.getCod_producto());
 			ps.setLong(3, detventa.getCod_venta());
-			ps.setLong(4, detventa.getValor_total());
-			ps.setLong(5, detventa.getValor_venta());
-			ps.setLong(6, detventa.getValor_iva());
+			ps.setDouble(4, detventa.getValor_total());
+			ps.setDouble(5, detventa.getValor_venta());
+			ps.setDouble(6, detventa.getValor_iva());
 
 			result = ps.executeUpdate();
 			if (result > 0)

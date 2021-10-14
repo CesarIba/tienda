@@ -2,15 +2,15 @@ package model;
 
 public class detalleventasDTO {
 
-	private Long cant_producto;
+	private int cant_producto;
 	private Long cod_producto;
 	private Long cod_venta;
-	private Long valor_total;
-	private Long valor_venta;
-	private Long valor_iva;
+	private double valor_total;
+	private double valor_venta;
+	private double valor_iva;
 
-	public detalleventasDTO(Long cant_producto, Long cod_producto, Long cod_venta, Long valor_total, Long valor_venta,
-			Long valor_iva) {
+	public detalleventasDTO(int cant_producto, Long cod_producto, Long cod_venta, double valor_total, double valor_venta,
+			double valor_iva) {
 		super();
 		this.cant_producto = cant_producto;
 		this.cod_producto = cod_producto;
@@ -20,11 +20,11 @@ public class detalleventasDTO {
 		this.valor_iva = valor_iva;
 	}
 
-	public Long getCant_producto() {
+	public int getCant_producto() {
 		return cant_producto;
 	}
 
-	public void setCant_producto(Long cant_producto) {
+	public void setCant_producto(int cant_producto) {
 		this.cant_producto = cant_producto;
 	}
 
@@ -44,27 +44,27 @@ public class detalleventasDTO {
 		this.cod_venta = cod_venta;
 	}
 
-	public Long getValor_total() {
+	public double getValor_total() {
 		return valor_total;
 	}
 
-	public void setValor_total(Long valor_total) {
+	public void setValor_total(double valor_total) {
 		this.valor_total = valor_total;
 	}
 
-	public Long getValor_venta() {
+	public double getValor_venta() {
 		return valor_venta;
 	}
 
-	public void setValor_venta(Long valor_venta) {
+	public void setValor_venta(double valor_venta) {
 		this.valor_venta = valor_venta;
 	}
 
-	public Long getValor_iva() {
+	public double getValor_iva() {
 		return valor_iva;
 	}
 
-	public void setValor_iva(Long valor_iva) {
+	public void setValor_iva(double valor_iva) {
 		this.valor_iva = valor_iva;
 	}
 }

@@ -44,19 +44,21 @@ public class servletDetalleventas extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		long cantprodDetv, codprodDetv, codventDetv, valtotDetv, valventDetv, valivaDetv;
+		int cantprodDetv;
+		long codprodDetv, codventDetv; 
+		double valtotDetv, valventDetv, valivaDetv;
 		detalleventasDTO detventasDto, detventasDtoRes;
 		detalleventasDAO detventasDao = new detalleventasDAO();
 
 		if (request.getParameter("btnInsertar") != null) {
 
 			if (!request.getParameter("cant_producto").isEmpty()) {
-				cantprodDetv = Long.parseLong(request.getParameter("cant_producto"));
+				cantprodDetv = Integer.parseInt(request.getParameter("cant_producto"));
 				codprodDetv = Long.parseLong(request.getParameter("cod_producto"));
 				codventDetv = Long.parseLong(request.getParameter("cod_venta"));
-				valtotDetv = Long.parseLong(request.getParameter("valor_total"));
-				valventDetv = Long.parseLong(request.getParameter("valor_venta"));
-				valivaDetv = Long.parseLong(request.getParameter("valor_iva"));
+				valtotDetv = Double.parseDouble(request.getParameter("valor_total"));
+				valventDetv = Double.parseDouble(request.getParameter("valor_venta"));
+				valivaDetv = Double.parseDouble(request.getParameter("valor_iva"));
 
 				detventasDto = new detalleventasDTO(cantprodDetv, codprodDetv, codventDetv, valtotDetv, valventDetv,
 						valivaDetv);
