@@ -38,7 +38,7 @@ public class usuariosDAO {
 	
 	public usuariosDTO consultarId(usuariosDTO usu) {
 		try {
-			ps=cnn.prepareStatement("SELECT * FROM USUARIOS WHERE cedula_usuario =?");
+			ps=cnn.prepareStatement("SELECT * FROM usuarios WHERE cedula_usuario =?");
 			ps.setLong(1, usu.getCedula_usuario());
 			rs=ps.executeQuery();
 			if(rs.next()) {

@@ -39,7 +39,7 @@ public class Servletlogin extends HttpServlet {
 	
 	else {
 		JOptionPane.showMessageDialog(null, "Datos incorrectos");
-		response.sendRedirect("Index.jsp");
+		response.sendRedirect("index.jsp");
 	}
 	}
 
