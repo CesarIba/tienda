@@ -13,18 +13,8 @@
 <script type="text/javascript" src="js/consultar.js"></script>
 </head>
 <body>
-	<%
-	String ced = "", nom = "", mail = "", usu = "", clv = "";
-	if (request.getParameter("ced") != null) {
-		ced = request.getParameter("ced");
-		nom = request.getParameter("nom");
-		mail = request.getParameter("mail");
-		usu = request.getParameter("usu");
-		clv = request.getParameter("clv");
-	}
-	%>
 	<div class="cont_subtitulo">
-		<h2>Tienda genérica</h2>
+		<h2>TIENDA DEPORTIVA</h2>
 	</div>
 	<main>
 		<section class="section" id=s1>

@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="cont_subtitulo">
-	<h2>Tienda genérica</h2>
+	<h2>TIENDA DEPORTIVA</h2>
 </div>
 <div class="vertical-menu">
 <nav>

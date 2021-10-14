@@ -22,7 +22,7 @@
 	}
 	%>
 	<div class="cont_subtitulo">
-		<h2>Tienda genérica</h2>
+		<h2>TIENDA DEPORTIVA</h2>
 	</div>
 	<main>
 		<section class="section" id=s1>
