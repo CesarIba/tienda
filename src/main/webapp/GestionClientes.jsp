@@ -6,7 +6,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <link rel="stylesheet"
-	href="https://i.icomoon.io/public/temp/e2a4690ac5/UntitledProject/style.css">
+	href="https://i.icomoon.io/public/temp/698f0840d1/UntitledProject/style.css">
 <link rel="stylesheet" href="CSS/stylesGestion.css" type="text/css" />
 <title>CLIENTES</title>
 </head>
@@ -33,7 +33,7 @@
 								Gestión de Usuarios</a></li>
 						<li><a href="GestionClientes.jsp"><span class="icon-address-book"></span>Módulo
 								Gestión de Clientes</a></li>
-						<li><a href=""><span class="icon-truck"></span>Módulo
+						<li><a href="GestionProveedores.jsp"><span class="icon-truck"></span>Módulo
 								Gestión de Proveedores</a></li>
 						<li><a href="GestionProductos.jsp"><span class="icon-database"></span>Módulo
 								Gestión de Productos</a></li>

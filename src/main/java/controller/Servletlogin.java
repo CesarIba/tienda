@@ -1,6 +1,8 @@
 package controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -49,11 +51,17 @@ public class Servletlogin extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//response.setContentType("text/html;charset=UTF-8");
+		//PrintWriter out = response.getWriter();
 		HttpSession sesion=request.getSession();	
 		String u,c;
 				u=request.getParameter("usu");
 				c=request.getParameter("pass");
 				if (u.equals( "admininicial")&& c.equals("admin123456")) {
+//					out.println("<script type=\"text/javascript\">");
+//					   out.println("alert('Datos correctos');");
+//					   out.println("location='index.jsp';");
+//					   out.println("</script>");
 					JOptionPane.showMessageDialog(null, "Datos correctos");
 					sesion.setAttribute("vs",123456789);
 					request.getRequestDispatcher("Menu principal.jsp").forward(request, response);

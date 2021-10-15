@@ -1,0 +1,220 @@
+@charset "ISO-8859-1";
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../IMG/street.jpg) no-repeat center top;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+h2 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 30px;
+  background: rgba(5, 7, 12, 0.9);
+  color:white;
+}
+
+.cont_subtitulo h2{
+	padding: 20px;
+}
+
+.vertical-menu {
+  width: 300px;
+}
+
+.vertical-menu a {
+  background-color: rgba(5, 7, 12, 0.9);
+  color: white;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: gray;
+}
+
+.vertical-menu a.active {
+  background-color: #04AA6D;
+  color: #000;
+  text-decoration: none;
+}
+
+.vertical-menu nav ul {
+  overflow: hidden;
+  list-style: none;
+}
+
+.vertical-menu nav ul li a{
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+}
+.vertical-menu nav ul li span {
+  margin-right: 15px;
+}
+
+main{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.section2 {
+  width: 670px;
+  height: 350px;
+  background: rgba(5, 7, 12, 0.75);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-25%, -45%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.section3 {
+  width: 670px;
+  height: 350px;
+  background: rgba(5, 7, 12, 0.75);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-25%, -45%);
+  box-sizing: border-box;
+  padding: 170px 130px;
+}
+
+fieldset{
+  background-color: transparent;
+  width: 98%;
+  transform: translate(-2%, -16%);
+ }
+
+fieldset legend {
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  display: run-in;
+  font-weight: bold;
+}
+
+fieldset input[type="text"] {
+  text-align: justify;
+  margin: 0px 70px;
+
+}
+
+.gestion-usuarios input[name="nombre"], .gestion-usuarios input[name="cedula"],
+ .gestion-usuarios input[name="email"], .gestion-usuarios input[name="usuario"],
+ .gestion-usuarios input[name="clave"], .gestion-usuarios input[name="dir_cli"],
+ .gestion-usuarios input[name="tel_cli"], .gestion-usuarios input[name="nit"], 
+ .gestion-usuarios input[name="nombre"], .gestion-usuarios input[name="ciudad"],
+ .gestion-usuarios input[name="dir_prov"], .gestion-usuarios input[name="tel_prov"]{
+ 
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent; 
+  outline: none;
+  height: 35px;
+  width: 70%;
+  color: #fff;
+  font-size: 16px;
+}
+
+.gestion-usuarios input[name="btnInsertar"], .gestion-usuarios input[name="btnEliminar"],
+ .gestion-usuarios input[name="btnEditar"], .gestion-usuarios input[name="btnConsultar"], 
+ .gestion-usuarios input[name="btnLimpiar"] {
+  border: none;
+  outline: none;
+  height: 27px;
+  width: 110px;
+  background: #0080ff;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 15px;
+  margin: 0px 2px;
+  box-shadow: 0px 2px 0px #c0c0c0;
+}
+
+.gestion-usuarios input[name="btnInsertar"]:hover {
+  cursor: pointer;
+  background: #80ff80;
+  color: #000;
+}
+
+.gestion-usuarios input[name="btnEliminar"]:hover {
+  cursor: pointer;
+  background: #fc8181;
+  color: #000;
+}
+
+.gestion-usuarios input[name="btnEditar"]:hover {
+  cursor: pointer;
+  background: #f9f168;
+  color: #000;
+}
+
+.gestion-usuarios input[name="btnConsultar"]:hover {
+  cursor: pointer;
+  background: #80ffff;
+  color: #000;
+}
+
+.gestion-usuarios input[name="btnLimpiar"]:hover {
+  cursor: pointer;
+  background: #f9f168;
+  color: #000;
+}
+
+
+
+.section4 {
+  width: 470px;
+  height: 250px;
+  background: rgba(5, 7, 12, 0.75);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-35%, -65%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.gestion-productos input[name="nomArchivo"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent; 
+  outline: none;
+  height: 22px;
+  width: 40%;
+  margin: 0px 2px;
+  color: #fff;
+  font-size: 16px;
+}	
+
+ .gestion-productos input[name="btnCargar"] {
+  border: none;
+  outline: none;
+  height: 28px;
+  width: 140px;
+  background: #ffff80;
+  color: #000000;
+  font-size: 15px;
+  border-radius: 15px;
+  margin: 0px 2px;
+  box-shadow: 0px 2px 0px #808080;
+  
+}
+
+.gestion-productos input[name="btnCargar"]:hover {
+  cursor: pointer;
+  background: rgb(128, 255, 0);
+  color: #000;
+}

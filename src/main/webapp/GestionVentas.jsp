@@ -9,7 +9,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <link rel="stylesheet"
-	href="https://i.icomoon.io/public/temp/e2a4690ac5/UntitledProject/style.css">
+	href="https://i.icomoon.io/public/temp/698f0840d1/UntitledProject/style.css">
 <link rel="stylesheet" href="CSS/stylesGestion.css" type="text/css" />
 <title>VENTAS</title>
 </head>

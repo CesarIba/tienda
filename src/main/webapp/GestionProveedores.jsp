@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<link rel="stylesheet" href="https://i.icomoon.io/public/temp/2b5b85b3e1/UntitledProject/style.css">
+<link rel="stylesheet" href="https://i.icomoon.io/public/temp/698f0840d1/UntitledProject/style.css">
 <link rel="stylesheet" href="CSS/stylesGestion.css" type="text/css" />
 <title>PROVEEDORES</title>
 </head>

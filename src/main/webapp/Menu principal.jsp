@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<link rel="stylesheet" href="https://i.icomoon.io/public/temp/08a8bd0ce2/UntitledProject/style.css">
+<link rel="stylesheet" href="https://i.icomoon.io/public/temp/698f0840d1/UntitledProject/style.css">
 <link rel="stylesheet" href="CSS/stylesmenu.css" type="text/css"/>
 <title>MENÚ PRINCIPAL</title>
 </head>

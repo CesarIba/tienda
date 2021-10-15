@@ -1,12 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@page import="controller.conexion"%>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <link rel="stylesheet"
-	href="https://i.icomoon.io/public/temp/e2a4690ac5/UntitledProject/style.css">
+	href="https://i.icomoon.io/public/temp/698f0840d1/UntitledProject/style.css">
 <link rel="stylesheet" href="CSS/stylesGestion.css" type="text/css" />
 <title>REPORTES</title>
 <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
@@ -40,18 +41,19 @@
 		</section>
 		<section class="section2" id="s2">
 			<fieldset>
-				<legend>Usuarios</legend>
+				<legend>Reportes</legend>
 				<div class="gestion-usuarios">
 					<form>
-						<input class="consultar" type="button" name="btnConsultar" value="Consultar"> 
+						<br>
+						<input class="consultar" type="button" name="btnConsultar" value="Usuarios">
+						<input class="consultarClientes" type="button" name="btnConsultar" value="Clientes">
+						<input class="consultarVentas" type="button" name="btnConsultar" value="Venta Cli">
+						<br><br><table id="resultado" border="1"></table> 
 					</form>
 				</div>
 			</fieldset>
-			<table id="resultado" border="1"></table>
+			
 		</section>
-<!-- 		<section class="section3"> -->
-<!-- 			<table id="resultado" border="1"></table> -->
-<!-- 		</section> -->
 	</main>
 </body>
 </html>
