@@ -21,7 +21,7 @@ public class ventasDAO {
 		int result;
 		boolean res = false;
 		try {
-			ps = cnn.prepareStatement("INSERT INTO ventas VALUES(?,?,?,?,?)");
+			ps = cnn.prepareStatement("INSERT INTO ventas (cedula_cliente,cedula_usuario,iva_venta,total_venta,valor_venta) VALUES(?,?,?,?,?)");
 			ps.setLong(1, venta.getCedula_cliente());
 			ps.setLong(2, venta.getCedula_usuario());
 			ps.setDouble(3, venta.getIva_venta());
@@ -40,20 +40,14 @@ public class ventasDAO {
 	
 	public  ventasDTO consultarcodventa() {
 		try {
-			ps=cnn.prepareStatement("SELECT MAX(codigo_venta),cedula_cliente,cedula_usuario,iva_venta,total_venta,valor_venta AS id FROM ventas");
+			ps=cnn.prepareStatement("SELECT MAX(cod_venta),cedula_cliente,cedula_usuario,iva_venta,total_venta,valor_venta AS id FROM ventas");
 			rs=ps.executeQuery();
 			if(rs.next()) {
-				
-				JOptionPane.showMessageDialog(null, "En el if");
 				venta=new ventasDTO(rs.getInt(1), rs.getLong(2), rs.getLong(3), rs.getDouble(4), rs.getDouble(5),rs.getDouble(6));
-			
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 		return venta;
 	}
-
 }

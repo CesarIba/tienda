@@ -218,3 +218,152 @@ fieldset input[type="text"] {
   background: rgb(128, 255, 0);
   color: #000;
 }
+
+
+
+.section5 {
+  width: 800px;
+  height: 450px;
+  background: rgba(5, 7, 12, 0.75);
+  color: #fff;
+  top: 51%;
+  left: 43%;
+  position: absolute;
+  transform: translate(-25%, -45%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.gestion-ventas table{
+  height: 100%;
+  width: 100%;
+  text-align: left;
+}
+
+
+th, td{
+  padding: 0;
+  border: groove 1px aqua;
+}
+
+.gestion-ventas td input {
+  padding: 0;
+  height: 80%;
+  width: 30%;
+  font-size: 15px;
+  box-sizing: border-box; 
+}
+
+.gestion-ventas input[name="btnConsulprod1"], .gestion-ventas input[name="btnConsulprod2"]
+,.gestion-ventas input[name="btnConsulprod3"] {
+  border: none;
+  outline: none;
+  height: 18px;
+  width: 100px;
+  background: #80ffff;
+  color: #000000;
+  font-size: 15px;
+  border-radius: 15px;
+  margin: 0px 2px;
+  box-shadow: 0px 2px 0px #808080;  
+}
+
+
+
+
+.gestion-ventas input[name="btnConsultar"] {
+  border: none;
+  outline: none;
+  height: 25px;
+  width: 140px;
+  background: #80ffff;
+  color: #000000;
+  font-size: 15px;
+  border-radius: 15px;
+  margin: 0px 2px;
+  box-shadow: 0px 2px 0px #808080;  
+}
+
+.gestion-ventas input[name="btnConsultar"]:hover {
+  cursor: pointer;
+  background: #c1c1ff;
+  color: #000;
+}
+
+.gestion-ventas input[name="btnCotizar"] {
+  border: none;
+  outline: none;
+  height: 28px;
+  width: 140px;
+  background: #fab854;
+  color: #000000;
+  font-size: 15px;
+  border-radius: 15px;
+  margin: 0px 2px;
+  box-shadow: 0px 2px 0px #808080;  
+}
+
+.gestion-ventas input[name="btnCotizar"]:hover {
+  cursor: pointer;
+  background: #ffff80;
+  color: #000;
+}
+
+.gestion-ventas input[name="btnInsertar"] {
+  border: none;
+  outline: none;
+  height: 28px;
+  width: 140px;
+  background: #0080ff;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 15px;
+  margin: 0px 2px;
+  box-shadow: 0px 2px 0px #808080;  
+}
+
+.gestion-ventas input[name="btnInsertar"]:hover {
+  cursor: pointer;
+  background: #80ff80;
+  color: #000;
+}
+
+.gestion-ventas input[name="btnLimpiar"] {
+  border: none;
+  outline: none;
+  height: 28px;
+  width: 140px;
+  background: #ff9fcf;
+  color: #000000;
+  font-size: 15px;
+  border-radius: 15px;
+  margin: 0px 2px;
+  box-shadow: 0px 2px 0px #808080;  
+}
+
+.gestion-ventas input[name="btnLimpiar"]:hover {
+  cursor: pointer;
+  background: #80ff80;
+  color: #000;
+}
+
+.gestion-ventas input[name="cliente"], .gestion-ventas input[name="nombre_prod1"],
+.gestion-ventas input[name="nombre_prod2"], .gestion-ventas input[name="nombre_prod3"],
+.gestion-ventas input[name="valor_prod1"], .gestion-ventas input[name="valor_prod2"],
+.gestion-ventas input[name="valor_prod3"], .gestion-ventas input[name="Total_venta"],
+.gestion-ventas input[name="Total_iva"], .gestion-ventas input[name="cedCli"],
+.gestion-ventas input[name="Total_coniva"], .gestion-ventas input[name="cant_prod1"],
+.gestion-ventas input[name="cant_prod2"], .gestion-ventas input[name="cant_prod3"],
+.gestion-ventas input[name="cod_prod1"], .gestion-ventas input[name="cod_prod2"],
+.gestion-ventas input[name="cod_prod3"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent; 
+  outline: none;
+  height: 22px;
+  width: 40%;
+  margin: 0px 2px;
+  color: #fff;
+  font-size: 16px;
+}	
+

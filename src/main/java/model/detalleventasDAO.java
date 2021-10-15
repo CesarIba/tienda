@@ -20,7 +20,7 @@ public class detalleventasDAO {
 		int result;
 		boolean res = false;
 		try {
-			ps = cnn.prepareStatement("INSERT INTO det_ventas VALUES(?,?,?,?,?,?)");
+			ps = cnn.prepareStatement("Insert Into det_ventas(cant_producto,cod_producto,cod_venta,valor_total,valor_venta,valor_iva) VALUES(?,?,?,?,?,?)");
 			ps.setInt(1, detventa.getCant_producto());
 			ps.setLong(2, detventa.getCod_producto());
 			ps.setLong(3, detventa.getCod_venta());
