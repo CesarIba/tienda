@@ -25,13 +25,13 @@
 								Gestión de Usuarios</a></li>
 						<li><a href="GestionClientes.jsp"><span class="icon-address-book"></span>Módulo
 								Gestión de Clientes</a></li>
-						<li><a href="#"><span class="icon-truck"></span>Módulo
+						<li><a href="GestionProveedores.jsp"><span class="icon-truck"></span>Módulo
 								Gestión de Proveedores</a></li>
-						<li><a href="#"><span class="icon-database"></span>Módulo
+						<li><a href="GestionClientes.jsp"><span class="icon-database"></span>Módulo
 								Gestión de Productos</a></li>
-						<li><a href="#"><span class="icon-cart"></span>Módulo
+						<li><a href="GestionVentas.jsp"><span class="icon-cart"></span>Módulo
 								Gestión de Ventas</a></li>
-						<li><a href="#"><span class="icon-stats-dots"></span>Módulo
+						<li><a href="Reportes.jsp"><span class="icon-stats-dots"></span>Módulo
 								Gestión de Consultas y Reportes</a></li>
 						<li><a href="index.jsp"><span class="icon-exit"></span>Salir</a></li>
 					</ul>
