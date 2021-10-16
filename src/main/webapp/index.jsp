@@ -13,7 +13,7 @@
 	<div class="login-box">
 
 		<img class="avatar" alt="Logo tienda" src="IMG/icon.png">
-		<h1>Bienvenidos a la Tienda Genérica</h1>
+		<h1>TIENDA DEPORTIVA</h1>
 		<h2>Iniciar sesión</h2>
 
 		<form action="Servletlogin" method="post">

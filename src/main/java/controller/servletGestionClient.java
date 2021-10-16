@@ -100,7 +100,7 @@ public class servletGestionClient extends HttpServlet {
 				mailCli=request.getParameter("email");
 				direcCli=request.getParameter("dir_cli");
 				telClient=request.getParameter("tel_cli");
-				clientDto = new clientesDTO(cedulaCli, mailCli, nombreCli, telClient, direcCli);
+				clientDto = new clientesDTO(cedulaCli, direcCli,mailCli, nombreCli, telClient);
 				res = clientDao.actualizarCli(clientDto);
 				if(res>0) {
 					JOptionPane.showMessageDialog(null, "Se actualizo al cliente: " + cedulaCli);

@@ -1,11 +1,14 @@
 package controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import javax.swing.JOptionPane;
 
 /**
@@ -28,18 +31,19 @@ public class Servletlogin extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		HttpSession sesion=request.getSession();
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		String u,c;
 		u=request.getParameter("usu");
 		c=request.getParameter("pass");
 		if (u.equals("admininicial")&& c.equals("admin123456")) {
-			JOptionPane.showMessageDialog(null, "Datos correctos");
+			//JOptionPane.showMessageDialog(null, "Datos correctos");
+			sesion.setAttribute("vs",123456789);
 			response.sendRedirect("Menu principal.jsp?dat="+u);
 		}
-	
 	else {
-		JOptionPane.showMessageDialog(null, "Datos incorrectos");
-		response.sendRedirect("Index.jsp");
+		//JOptionPane.showMessageDialog(null, "Datos incorrectos");
+		response.sendRedirect("index.jsp");
 	}
 	}
 
@@ -47,17 +51,26 @@ public class Servletlogin extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-			String u,c;
+		//response.setContentType("text/html;charset=UTF-8");
+		//PrintWriter out = response.getWriter();
+		HttpSession sesion=request.getSession();	
+		String u,c;
 				u=request.getParameter("usu");
 				c=request.getParameter("pass");
 				if (u.equals( "admininicial")&& c.equals("admin123456")) {
-					JOptionPane.showMessageDialog(null, "Datos correctos");
-					response.sendRedirect("Menu principal.jsp?dat="+u);
+//					out.println("<script type=\"text/javascript\">");
+//					   out.println("alert('Datos correctos');");
+//					   out.println("location='index.jsp';");
+//					   out.println("</script>");
+					//JOptionPane.showMessageDialog(null, "Datos correctos");
+					sesion.setAttribute("vs",123456789);
+					request.getRequestDispatcher("Menu principal.jsp").forward(request, response);
+					//response.sendRedirect("Menu principal.jsp?dat="+u);
 				}
 			
 			else {
-				JOptionPane.showMessageDialog(null, "Datos incorrectos");
-				response.sendRedirect("Index.jsp");
+				//JOptionPane.showMessageDialog(null, "Datos incorrectos");
+				response.sendRedirect("index.jsp");
 			}
 	}
 

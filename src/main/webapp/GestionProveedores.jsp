@@ -5,18 +5,17 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<link rel="stylesheet"
-	href="https://i.icomoon.io/public/temp/698f0840d1/UntitledProject/style.css">
+<link rel="stylesheet" href="https://i.icomoon.io/public/temp/698f0840d1/UntitledProject/style.css">
 <link rel="stylesheet" href="CSS/stylesGestion.css" type="text/css" />
-<title>CLIENTES</title>
+<title>PROVEEDORES</title>
 </head>
 <body>
 	<%
-	String ced = "", nom = "", mail = "", dir = "", tel = "";
-	if (request.getParameter("ced") != null) {
-		ced = request.getParameter("ced");
+	String nit = "", nom = "", ciu = "", dir = "", tel = "";
+	if (request.getParameter("nit") != null) {
+		nit = request.getParameter("nit");
 		nom = request.getParameter("nom");
-		mail = request.getParameter("mail");
+		ciu = request.getParameter("ciu");
 		dir = request.getParameter("dir");
 		tel = request.getParameter("tel");
 	}
@@ -48,14 +47,14 @@
 		</section>
 		<section class="section2" id="s2">
 			<fieldset>
-				<legend>Clientes</legend>
+				<legend>Proveedores</legend>
 				<div class="gestion-usuarios">
-					<form action="servletGestionClient" method="POST">
-						<input type="text" name="cedula" value="<%=ced%>" placeholder="Cedula"><br> 
-						<input type="text" name="nombre" value="<%=nom%>" placeholder="Nombres"><br>
-						<input type="text" name="email" value="<%=mail%>" placeholder="Correo"><br> 
-						<input type="text" name="dir_cli" value="<%=dir%>" placeholder="Direccion"><br>
-						<input type="text" name="tel_cli" value="<%=tel%>" placeholder="Telefono"><br> <br> <br> 
+					<form action="servletProveedores" method="POST">
+						<input type="text" name="nit" value="<%=nit%>" placeholder="NIT"><br> 
+						<input type="text" name="nombre" value="<%=nom%>" placeholder="Nombre"><br>
+						<input type="text" name="ciudad" value="<%=ciu%>" placeholder="Ciudad"><br> 
+						<input type="text" name="dir_prov" value="<%=dir%>" placeholder="Direccion"><br>
+						<input type="text" name="tel_prov" value="<%=tel%>" placeholder="Telefono"><br> <br> <br> 
 						<input class="consultar" type="submit" name="btnConsultar" value="Consultar"> 
 						<input class="insertar" type="submit" name="btnInsertar" value="Insertar">
 						<input class="editar" type="submit" name="btnEditar" value="Editar"> 
