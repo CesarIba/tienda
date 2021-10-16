@@ -37,12 +37,12 @@ public class Servletlogin extends HttpServlet {
 		u=request.getParameter("usu");
 		c=request.getParameter("pass");
 		if (u.equals("admininicial")&& c.equals("admin123456")) {
-			JOptionPane.showMessageDialog(null, "Datos correctos");
+			//JOptionPane.showMessageDialog(null, "Datos correctos");
 			sesion.setAttribute("vs",123456789);
 			response.sendRedirect("Menu principal.jsp?dat="+u);
 		}
 	else {
-		JOptionPane.showMessageDialog(null, "Datos incorrectos");
+		//JOptionPane.showMessageDialog(null, "Datos incorrectos");
 		response.sendRedirect("index.jsp");
 	}
 	}
@@ -62,14 +62,14 @@ public class Servletlogin extends HttpServlet {
 //					   out.println("alert('Datos correctos');");
 //					   out.println("location='index.jsp';");
 //					   out.println("</script>");
-					JOptionPane.showMessageDialog(null, "Datos correctos");
+					//JOptionPane.showMessageDialog(null, "Datos correctos");
 					sesion.setAttribute("vs",123456789);
 					request.getRequestDispatcher("Menu principal.jsp").forward(request, response);
 					//response.sendRedirect("Menu principal.jsp?dat="+u);
 				}
 			
 			else {
-				JOptionPane.showMessageDialog(null, "Datos incorrectos");
+				//JOptionPane.showMessageDialog(null, "Datos incorrectos");
 				response.sendRedirect("index.jsp");
 			}
 	}

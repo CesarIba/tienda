@@ -21,7 +21,7 @@ public class ventasClienteDAO {
 	public  ArrayList<ventasClienteDTO> consultarVenta_cli() {
 		ArrayList<ventasClienteDTO> listVentclientes=new ArrayList<>();
 		try {
-			ps=cnn.prepareStatement("SELECT cli.cedula_cliente, cli.nombre_cliente, vent.cod_venta, vent.total_venta \r\n"
+			ps=cnn.prepareStatement("SELECT cli.cedula_cliente, cli.nombre_cliente, vent.cod_venta, vent.valor_venta \r\n"
 					+ "FROM clientes cli\r\n"
 					+ "INNER JOIN ventas vent ON cli.cedula_cliente=vent.cedula_cliente");
 			rs=ps.executeQuery();
